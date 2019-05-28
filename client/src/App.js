@@ -82,8 +82,9 @@ class App extends React.Component {
     })
     this.setState({
       items: filteredItems
+    }, ()=>{
+      this.saveStateToLocalStorage();
     })
-    this.saveStateToLocalStorage();
   }
 
   editTodo = key => {
