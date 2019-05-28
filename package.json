@@ -1,0 +1,20 @@
+{
+  "name": "react-todo-app",
+  "version": "1.0.0",
+  "description": "It's a basic todo app build with react using localStorage to store data with login and logout functionality",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "keywords": [
+    "react",
+    "todo",
+    "login"
+  ],
+  "author": "Gurpreet Singh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
