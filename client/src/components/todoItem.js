@@ -21,8 +21,8 @@ const TodoItem = ({items,selectTodo,deleteTodo,editTodo,showDetails}) =>{
                   <label className="custom-control-label" htmlFor={item.key.toString(36)}></label>
                 </div>
               </li>
-              <li className={`w-70 list-group-item p-2 task-info ${(item.selected)?"completed-task":""}`} onClick={()=>showDetails(item.key)}>{item.task}</li>
-              <li className="w-20 list-group-item d-flex justify-content-center p-2">
+              <li className={`w-65 list-group-item p-2 task-info ${(item.selected)?"completed-task":""}`} onClick={()=>showDetails(item.key)}>{item.task}</li>
+              <li className="w-25 list-group-item d-flex justify-content-center p-2">
                 <button className="btn btn-outline-secondary btn-sm align-self-center mr-1 edit-todo" onClick={()=>editTodo(item.key)} disabled={item.selected}>&#x270E;</button>
                 <button className="btn btn-outline-danger btn-sm align-self-center" onClick={()=>deleteTodo(item.key)} disabled={item.selected}>&#x2716;</button>
               </li>
