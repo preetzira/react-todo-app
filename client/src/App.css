@@ -15,10 +15,17 @@ body{
   border-top-right-radius: 20px!important;
 }
 
+.navbar{
+  box-shadow: 0 .1px 5px rgba(0,0,0,0.15);
+}
+
 .todoApp{
+  position: relative;
+  top: 20px;
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.05), 0 6px 6px rgba(0,0,0,0.15);
   overflow: hidden;
+  margin-bottom: 20px;
   animation: slide-up 2s ease;
 }
 

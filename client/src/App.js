@@ -70,7 +70,8 @@ class App extends React.Component {
   addTodo = task => {
     this.newItem = {task,key:Date.now(),timestamp:Date.now(),selected:false,completed:false,expanded:false}
     this.setState({
-      items:[...this.state.items, this.newItem]
+      items:[...this.state.items, this.newItem],
+      currentItem:""
     })
     localStorage.setItem("items", encryptString(JSON.stringify(this.state.items)));
     this.saveStateToLocalStorage();
@@ -82,8 +83,6 @@ class App extends React.Component {
     })
     this.setState({
       items: filteredItems
-    }, ()=>{
-      this.saveStateToLocalStorage();
     })
   }
 

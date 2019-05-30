@@ -27,7 +27,7 @@ const Header = props =>{
 
   return(
     <header>
-      <nav className="navbar navbar-expand-sm bg-white navbar-light justify-content-end p-0">
+      <nav className="navbar navbar-expand-sm bg-white fixed-top navbar-light justify-content-end p-0">
         <ul className="navbar-nav">
           <li className="nav-item">
             <AuthButton />
