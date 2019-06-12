@@ -85,6 +85,9 @@ class App extends React.Component {
     })
     this.setState({
       items: filteredItems
+    },()=>{
+      localStorage.setItem("items", encryptString(JSON.stringify(this.state.items)));
+      this.saveStateToLocalStorage();
     })
   }
 
