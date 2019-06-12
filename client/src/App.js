@@ -72,7 +72,7 @@ class App extends React.Component {
     this.setState({
       items:[...this.state.items, this.newItem],
       currentItem:""
-    }()=>{
+    },()=>{
       localStorage.setItem("items", encryptString(JSON.stringify(this.state.items)));
       this.saveStateToLocalStorage();
     })
